@@ -249,11 +249,11 @@ const AdminPage: React.FC = () => {
   }
 
   return (
-    <main className="min-h-screen bg-background pt-20">
+    <main className="min-h-screen bg-background ">
       {/* Header */}
-      <section className="py-8 gradient-hero">
-        <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold text-primary-foreground mb-2">Admin Dashboard</h1>
+      <section className="py-8 gradient-hero min-h-[25vh] top-30">
+        <div className="container top-60 mx-auto px-4">
+          <h1 className="text-3xl font-bold text-primary-foreground  mb-2">Admin Dashboard</h1>
           <p className="text-primary-foreground/80">Manage products, orders, and tracking</p>
         </div>
       </section>

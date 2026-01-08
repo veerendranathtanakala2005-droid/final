@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { useCart } from '@/contexts/CartContext';
 import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
-import LanguageSelector from './LanguageSelector';
 
 interface NavbarProps {
   isAuthenticated: boolean;
@@ -34,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, onLogout, isAdmin = fa
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0  left-0 right-0 z-50 gap-0 bg-transparent  backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-12  left-0 right-0 z-50 gap-0 bg-transparent  backdrop-blur-lg border-b border-border">
       <div className="container  px-4">
         <div className="flex items-center justify-between font-bold h-20">
           {/* Logo */}
@@ -63,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, onLogout, isAdmin = fa
 
           {/* Right Section */}
           <div className="flex items-center gap-2">
-            <LanguageSelector />
+          
             <ThemeToggle />
             
             {isAuthenticated && (

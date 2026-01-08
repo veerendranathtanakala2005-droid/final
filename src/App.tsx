@@ -16,6 +16,7 @@ import VoiceCommandsHelp from "@/components/VoiceCommandsHelp";
 import WeatherAlerts from "@/components/WeatherAlerts";
 import Index from "./pages/Index";
 import AuthPage from "./pages/AuthPage";
+import GoogleTranslateBar from "./components/GoogleTranslateBar";
 import CropPrediction from "./pages/CropPrediction";
 import Analytics from "./pages/Analytics";
 import Shop from "./pages/Shop";
@@ -107,9 +108,9 @@ const AppContent = () => {
     <>
       {/* Google Translate Bar - Fixed at top */}
      
-      
+      <GoogleTranslateBar />
       {/* Add padding to account for translate bar */}
-      <div className="pt-[44px]">
+      <div className="pt-[4px]">
         <Navbar isAuthenticated={!!user} onLogout={signOut} isAdmin={isAdmin} />
         <Routes>
           <Route path="/" element={<Index />} />
